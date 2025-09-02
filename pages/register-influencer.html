@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFLU - Cadastro de Influenciador</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">INFLU</h1>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="feed.html">Feed</a>
+                <a href="profile.html">Meu Perfil</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-container">
+        <div class="container">
+            <h2>Crie seu Perfil de Influenciador</h2>
+            <p>Preencha os dados abaixo para que marcas possam encontrar você.</p>
+            <form id="influencer-form">
+                
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="username">Nome de Usuário (Instagram, TikTok, etc.)</label>
+                    <input type="text" id="username" name="username" placeholder="@seunome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Biografia</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Fale um pouco sobre você e seu nicho (ex: beleza, fitness, games)"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="social-media">Links para suas Redes Sociais</label>
+                    <input type="url" id="instagram" name="instagram" placeholder="Link do Instagram (opcional)">
+                    <input type="url" id="tiktok" name="tiktok" placeholder="Link do TikTok (opcional)">
+                </div>
+
+                <div class="form-group">
+                    <label>Serviços e Preços</label>
+                    <div class="service-item">
+                        <input type="text" class="service-name" placeholder="Ex: Post no Instagram">
+                        <input type="number" class="service-price" placeholder="Preço (R$)">
+                    </div>
+                    <button type="button" class="btn-secondary add-service-btn">Adicionar outro serviço</button>
+                </div>
+
+                <button type="submit" class="btn-primary">Criar Perfil</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 INFLU. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script-form.js"></script>
+
+</body>
+</html>

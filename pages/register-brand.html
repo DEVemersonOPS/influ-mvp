@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFLU - Cadastro de Marca</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">INFLU</h1>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="feed.html">Feed</a>
+                <a href="profile.html">Meu Perfil</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-container">
+        <div class="container">
+            <h2>Cadastre sua Marca</h2>
+            <p>Preencha os dados abaixo para começar a criar campanhas e encontrar influenciadores.</p>
+            <form id="brand-form">
+                
+                <div class="form-group">
+                    <label for="company-name">Nome da Empresa</label>
+                    <input type="text" id="company-name" name="company-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-name">Nome do Contato</label>
+                    <input type="text" id="contact-name" name="contact-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="website">Website</label>
+                    <input type="url" id="website" name="website" placeholder="Ex: https://www.suaempresa.com.br" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Sobre a Empresa</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Fale sobre seus produtos, público-alvo e o tipo de parceria que busca."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Orçamento Mínimo para Campanhas (R$)</label>
+                    <input type="number" id="budget" name="budget" placeholder="Ex: 500" required>
+                </div>
+
+                <button type="submit" class="btn-primary">Cadastrar Marca</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 INFLU. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
