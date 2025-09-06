@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFLU - Perfil de Influenciador</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
@@ -20,53 +21,108 @@
         </div>
     </header>
 
-    <main class="profile-container">
-        <div class="container">
-            <div class="profile-header">
-                <img src="https://i.ibb.co/3s2fC0F/influencer.png" alt="Foto de Perfil" class="profile-avatar">
-                <div class="profile-info">
-                    <h2>Carol Ferreira <span class="profile-tag">@carol_beauty</span></h2>
-                    <p>Influenciadora de beleza e lifestyle. Compartilho dicas de skincare e maquiagem com um toque de humor.</p>
-                    <div class="social-links">
-                        <a href="#">Instagram</a> | <a href="#">TikTok</a> | <a href="#">YouTube</a>
-                    </div>
+    <main class="profile-page">
+        <div class="profile-header-card">
+            <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?w=800" alt="Banner do Perfil" class="profile-banner">
+            <div class="profile-info-content">
+                <img src="https://i.ibb.co/3s2fC0F/influencer.png" alt="Foto de Perfil" class="profile-avatar-new">
+                
+                <div class="profile-actions">
+                    <button class="action-btn"><i class="fas fa-chart-simple"></i></button>
+                    <button class="action-btn"><i class="fas fa-user-plus"></i></button>
+                    <button class="action-btn"><i class="fas fa-comment-dots"></i></button>
+                </div>
+                
+                <h2 class="profile-name">Roberto Augusto</h2>
+                <p class="profile-followers">Followers: 23 mil <span class="profile-role">(Influenciador)</span></p>
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <h3 class="section-title">Mídias</h3>
+            <div class="media-grid">
+                <div class="media-item">
+                    <i class="fab fa-youtube"></i>
+                    <span>4.4 mil</span>
+                </div>
+                <div class="media-item">
+                    <i class="fab fa-twitter"></i>
+                    <span>19.3 mil</span>
+                </div>
+                <div class="media-item">
+                    <i class="fab fa-instagram"></i>
+                    <span>5.3 mil</span>
+                </div>
+                <div class="media-item">
+                    <i class="fab fa-tiktok"></i>
+                    <span>20 mil</span>
                 </div>
             </div>
-
-            <div class="profile-section metrics">
-                <h3>Métricas de Engajamento</h3>
-                <ul>
-                    <li>**Seguidores:** 50K</li>
-                    <li>**Engajamento:** 7,5%</li>
-                    <li>**Público:** Mulheres (18-24), Brasil</li>
-                </ul>
+        </div>
+        
+        <div class="profile-section">
+            <h3 class="section-title">Tags</h3>
+            <div class="tags-list">
+                <span class="tag">Sports</span>
+                <span class="tag">Style</span>
+                <span class="tag">Food</span>
             </div>
+        </div>
 
-            <div class="profile-section services">
-                <h3>Serviços e Preços</h3>
-                <ul>
-                    <li>**1 Post no Instagram:** R$ 300</li>
-                    <li>**1 Vídeo no TikTok (30s):** R$ 450</li>
-                    <li>**Pacote Stories (3 Stories):** R$ 200</li>
-                </ul>
+        <div class="profile-section">
+            <h3 class="section-title">Sobre</h3>
+            <ul class="about-list">
+                <li>✍️ Autor e entusiasta de escrita</li>
+                <li>✈️ Viajante em tempo integral</li>
+                <li>📸 Capturando eventos de beleza e lifestyle</li>
+                <li>🎉 Bem-vindo(a) ao meu mundo de descobertas</li>
+            </ul>
+        </div>
+        
+        <div class="profile-section">
+            <h3 class="section-title">Serviços</h3>
+            <div class="services-list">
+                <a href="#" class="service-item-btn">
+                    <i class="fas fa-film"></i>
+                    <span>Criação de um short vídeo para...</span>
+                </a>
+                <a href="#" class="service-item-btn">
+                    <i class="fas fa-image"></i>
+                    <span>Um post divulgando a imagem...</span>
+                </a>
+                <a href="#" class="service-item-btn">
+                    <i class="fas fa-video"></i>
+                    <span>Vídeo de 1 minutos sobre a em...</span>
+                </a>
             </div>
-
-            <div class="profile-section portfolio">
-                <h3>Portfólio</h3>
-                <div class="portfolio-grid">
-                    <img src="https://i.ibb.co/6803h1D/port1.png" alt="Exemplo 1">
-                    <img src="https://i.ibb.co/hCj2K0z/port2.png" alt="Exemplo 2">
-                    <img src="https://i.ibb.co/R2W2rP1/port3.png" alt="Exemplo 3">
+            <div class="expand-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <h3 class="section-title">Publicações</h3>
+            <div class="publications-scroller">
+                <div class="publication-card">
+                    <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?w=500" alt="Publicação 1">
+                    <p>Publicidade feita para em parce...</p>
+                </div>
+                <div class="publication-card">
+                    <img src="https://images.unsplash.com/photo-1511300636412-01634d3b8727?w=500" alt="Publicação 2">
+                    <p>Short em parceria com a marca...</p>
+                </div>
+                <div class="publication-card">
+                    <img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=500" alt="Publicação 3">
+                    <p>Campanha de moda para o ve...</p>
                 </div>
             </div>
         </div>
     </main>
-
+    
     <footer>
         <div class="container">
             <p>&copy; 2025 INFLU. Todos os direitos reservados.</p>
         </div>
     </footer>
-
 </body>
 </html>
