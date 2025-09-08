@@ -1,71 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="en"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFLU - Feed de Campanhas</title>
+    <title>INFLU - Explore</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
+<body class="app-body">
 
-    <header>
-        <div class="container">
-            <h1 class="logo">INFLU</h1>
-            <nav>
-                <a href="../index.html">Início</a>
-                <a href="#" class="active">Feed</a>
-                <a href="profile.html">Meu Perfil</a>
-            </nav>
+    <div class="app-container">
+        <header class="app-header">
+            <h1 class="app-title">Explore</h1>
+            <div class="header-icons">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-comment-dots"></i>
+            </div>
+        </header>
+
+        <div class="search-filter-bar">
+            <div class="search-input-wrapper">
+                <i class="fas fa-bars menu-icon"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="filter-toggles">
+                <button class="toggle-btn active"><i class="fas fa-store"></i></button>
+                <button class="toggle-btn"><i class="fas fa-user"></i></button>
+            </div>
+            <div class="sort-options">
+                <span>Influencers</span>
+                <i class="fas fa-sort"></i>
+            </div>
         </div>
-    </header>
-
-    <main class="feed-container">
-        <div class="container">
-            <h2>Feed de Campanhas e Parcerias</h2>
-            <p>Descubra as últimas oportunidades de trabalho e parcerias fechadas.</p>
-
-            <div class="feed-post">
-                <div class="post-header">
-                    <img src="https://i.ibb.co/L5rK5gD/marca.png" alt="Logo da Marca" class="post-avatar">
-                    <div class="post-info">
-                        <h4>Campanha: Lançamento de Tênis</h4>
-                        <span class="post-meta">Publicado por: **SportStyle** | Categoria: Moda | Status: Aberta</span>
-                    </div>
+        
+        <main class="explore-grid">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Service Ad">
+                <div class="card-icon-top brand-icon">
+                    <i class="fab fa-xing"></i>
                 </div>
-                <div class="post-content">
-                    <p>Procuramos influenciadores de estilo de vida e fitness para promover o nosso novo tênis sustentável. Queremos um vídeo no **TikTok** e 3 Stories no **Instagram**.</p>
-                </div>
-                <div class="post-actions">
-                    <button class="btn-secondary">Detalhes</button>
-                    <button class="btn-primary">Aceitar Campanha</button>
+                <div class="card-info">
+                    <p class="card-title">Video promotion...</p>
+                    <span class="card-author">Alexandre Lima</span>
                 </div>
             </div>
 
-            <div class="feed-post">
-                <div class="post-header">
-                    <img src="https://i.ibb.co/3s2fC0F/influencer.png" alt="Foto do Influenciador" class="post-avatar">
-                    <div class="post-info">
-                        <h4>Parceria Fechada: Dicas de Skincare</h4>
-                        <span class="post-meta">Fechada por: **Beleza Natural** e **@carol_beauty** | Status: Concluída</span>
-                    </div>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400" alt="Post Creation Service">
+                <div class="card-icon-top social-icon">
+                    <i class="fab fa-instagram"></i>
                 </div>
-                <div class="post-content">
-                    <p>Parceria incrível para divulgar a linha de produtos orgânicos. A influenciadora Carol postou um vídeo de review no **YouTube** e um carrossel no **Instagram** mostrando os benefícios.</p>
-                </div>
-                <div class="post-actions">
-                    <a href="profile.html" class="btn-tertiary">Ver Perfil da Carol</a>
-                    <span class="likes">❤️ 1.2K</span>
+                <div class="card-info">
+                    <p class="card-title">Post creation for...</p>
+                    <span class="card-author">Roberto Borges</span>
                 </div>
             </div>
-        </div>
-    </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 INFLU. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1598454449242-869152a550b4?w=400" alt="Product Service">
+                <div class="card-icon-top brand-icon">
+                     <i class="fab fa-xing"></i>
+                </div>
+                <div class="card-info">
+                    <p class="card-title">Perfume advertising...</p>
+                    <span class="card-author">Ana Clara</span>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=400" alt="Skincare Service">
+                <div class="card-icon-top social-icon">
+                     <i class="fab fa-instagram"></i>
+                </div>
+                <div class="card-info">
+                    <p class="card-title">Skincare routine...</p>
+                    <span class="card-author">Mariana Reis</span>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="feed.html" class="nav-item active"> <i class="fas fa-compass"></i>
+        </a>
+        <a href="post-ad.html" class="nav-item special"> <i class="fas fa-plus"></i>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+        <a href="profile.html" class="nav-item profile"> <img src="https://i.ibb.co/3s2fC0F/influencer.png" alt="Profile">
+        </a>
+    </nav>
 
 </body>
 </html>
