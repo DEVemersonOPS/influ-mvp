@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- NOVO CÓDIGO PARA SUBMISSÃO ---
     
     // 1. COLOQUE A URL DA SUA API AQUI
-    const apiUrl = 'https://7n37z1x6fe.execute-api.us-east-1.amazonaws.com/first-stage/createAdPost' ; // Ex: https://xxxx.execute-api.us-east-1.amazonaws.com/first-stage/post-ad
+    const apiUrl = 'https://7n37z1x6fe.execute-api.us-east-1.amazonaws.com/first-stage/createAdPost' ;
 
     const form = document.getElementById('adForm');
     
